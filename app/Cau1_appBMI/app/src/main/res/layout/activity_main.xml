@@ -22,7 +22,8 @@
         android:id="@+id/Cao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
         android:text="Chiều cao"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="175dp" />
@@ -31,7 +32,8 @@
         android:id="@+id/Nang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
         android:text="Cân Nặng"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="244dp" />
@@ -41,8 +43,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="167dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="161dp" />
 
     <EditText
@@ -50,12 +53,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="231dp" />
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="234dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Hamtinh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tính Toán"
