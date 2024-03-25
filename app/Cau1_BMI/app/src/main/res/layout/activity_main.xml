@@ -14,78 +14,70 @@
         android:text="Nhập chiều cao và cân nặng của bạn"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="89dp" />
 
     <TextView
         android:id="@+id/Cao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:layout_marginStart="30dp"
         android:text="Chiều cao"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"/>
+        tools:layout_editor_absoluteY="175dp" />
 
     <TextView
         android:id="@+id/Nang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:text="Cân nặng"
+        android:layout_marginStart="30dp"
+        android:text="Cân Nặng"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Cao"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
+        tools:layout_editor_absoluteY="244dp" />
 
     <EditText
         android:id="@+id/nhapCao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:ems="10"
         android:imeOptions="actionDone"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@id/Cao"
-        app:layout_constraintStart_toEndOf="@id/Cao"
-        app:layout_constraintTop_toTopOf="@id/Cao"
-        app:layout_constraintVertical_bias="0.478" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="161dp" />
 
     <EditText
         android:id="@+id/nhapcanNang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:ems="10"
         android:imeOptions="actionDone"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@id/Nang"
-        app:layout_constraintStart_toEndOf="@id/Nang"
-        app:layout_constraintTop_toTopOf="@id/Nang"
-        app:layout_constraintVertical_bias="0.173" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="234dp" />
 
     <Button
         android:id="@+id/Hamtinh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tính toán"
-        android:onClick="onCaculateButtonClick"
-        app:layout_constraintTop_toBottomOf="@id/nhapcanNang"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Tính Toán"
+
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="374dp"
+        android:onClick="onCaculateButtonClick"/>
 
     <TextView
-        android:id="@+id/tvKetQua"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/Hamtinh"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="536dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
