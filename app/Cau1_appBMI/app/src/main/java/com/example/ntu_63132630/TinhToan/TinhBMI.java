@@ -17,4 +17,22 @@ public class TinhBMI {
         }
         return bmiNhap;
     }
+    public String PhanLoai( double bmiNhap){
+        String bmiPhanLoai= "";
+        if(bmiNhap<16)
+        {
+            bmiPhanLoai="Gay";
+        }else if ( bmiNhap>=16 &&  bmiNhap<18.5)
+        {
+            bmiPhanLoai = "vua";
+            } else if ( bmiNhap>=18.5 &&  bmiNhap< 30 )
+        {
+            bmiPhanLoai = " Trung binh";
+        }else
+        {
+            bmiPhanLoai = "Beo";
+        }
+        return bmiPhanLoai;
+
+    }
 }
