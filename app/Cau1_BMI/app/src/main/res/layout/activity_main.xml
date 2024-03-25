@@ -52,11 +52,11 @@
         android:id="@+id/nhapcanNang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:imeOptions="actionDone"
         android:ems="10"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="231dp" />
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="234dp" />
 
     <Button
         android:id="@+id/Hamtinh"
