@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập chiều cao và cân nặng của bạn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/Cao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
+        android:text="Chiều cao"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/Nang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
+        android:text="Cân Nặng"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <EditText
+        android:id="@+id/nhapCao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <EditText
+        android:id="@+id/nhapcanNang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <Button
+        android:id="@+id/Hamtinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính Toán"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="374dp"
+        android:onClick="onCaculateButtonClick"/>
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="535dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
