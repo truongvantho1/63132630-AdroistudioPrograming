@@ -11,20 +11,22 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
         android:text="Nhập chiều cao và cân nặng của bạn"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nhapCao"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Cao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
         android:layout_marginStart="30dp"
         android:text="Chiều cao"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/nhapCao"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="175dp" />
 
@@ -32,9 +34,10 @@
         android:id="@+id/Nang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
         android:layout_marginStart="30dp"
         android:text="Cân Nặng"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/nhapcanNang"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="244dp" />
 
@@ -71,10 +74,10 @@
 
     <TextView
         android:id="@+id/tvKetQua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="535dp" />
 
