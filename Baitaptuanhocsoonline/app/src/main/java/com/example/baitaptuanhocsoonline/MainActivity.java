@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     }
     ArrayList<Landscape> getRecyclerviewData(){
         ArrayList dsDuLieu = new ArrayList<Landscape>();
-        Landscape landscape1 = new Landscape()
+        Landscape landscape1 = new Landscape("My", "LaCoMy");
+        dsDuLieu.add(landscape1);
+        dsDuLieu.add(new Landscape("Anh","LaCoAnh"));
+        dsDuLieu.add(new Landscape("CoVietNam","LaCoVietNam"));
+        return dsDuLieu;
+
     }
 }
