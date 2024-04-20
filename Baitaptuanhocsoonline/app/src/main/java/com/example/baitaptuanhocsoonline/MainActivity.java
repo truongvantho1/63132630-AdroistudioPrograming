@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerViewLandScape.setLayoutManager(layoutManager);
         landScapeAdapter = new LandScapeAdapter( this, recyclerviewData);
+
         
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
