@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -52,7 +53,7 @@ public class LandScapeAdapter extends  RecyclerView.Adapter<LandScapeAdapter.Ite
         return listData.size();
     }
 
-    class ItemLandHolder extends  RecyclerView.ViewHolder{
+    class ItemLandHolder extends  RecyclerView.ViewHolder implements  View.OnClickListener{
         TextView tvCapTion;
         ImageView imageViewLandscape;
 
@@ -61,6 +62,18 @@ public class LandScapeAdapter extends  RecyclerView.Adapter<LandScapeAdapter.Ite
             super(itemView);
             tvCapTion = itemView.findViewById(R.id.textView);
             imageViewLandscape = itemView.findViewById(R.id.HinhAnhview);
+            itemView.setOnClickListener(this);
+
+        }
+
+        @Override
+        public void onClick(View v) {
+        int viTriDuocBam = getAdapterPosition() ;
+        Landscape phanTu  = listData.get(viTriDuocBam);
+        String ten = phanTu.getLandViTri();
+        String tenFile = phanTu.getLandHinhAnh();
+        String chuoiTB= "Dang Load....."+ten;
+            Toast.makeText(v.getContext(),chuoiTB, Toast.LENGTH_SHORT).show();
         }
     }
 }
