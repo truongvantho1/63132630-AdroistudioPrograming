@@ -1,27 +1,58 @@
 package tho.chunhat.bottombaitapdeadline;
-
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+public class MainActivity extends AppCompatActivity{
+    BottomNavigationView bottomNavigationView;
+    FrameLayout fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        fragment = findViewById(R.id.framelayout);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int itemID = menuItem.getItemId();
+                if(itemID == R.id.home){
+                    loadFragment(new HomeFragment(),false);
+                }else if (itemID == R.id.profile){
+                    loadFragment(new PersonFragment(),false);
+                }else if (itemID == R.id.setting) {
+                    loadFragment(new SettingFragment(), false);
+                }
+
+                return true;
+            }
+
         });
+        loadFragment(new HomeFragment(),true);
+    }
+    private void loadFragment(Fragment fragment,boolean isApp){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        if (isApp){
+            fragmentTransaction.add(R.id.framelayout,fragment);
+        }else {
+            fragmentTransaction.add(R.id.framelayout,fragment);
+        }
+        fragmentTransaction.replace(R.id.framelayout,fragment);
+        fragmentTransaction.commit();
     }
 }
