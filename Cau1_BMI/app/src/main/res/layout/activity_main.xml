@@ -17,69 +17,79 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/nhapCao"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Cao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="104dp"
         android:text="Chiều cao"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/nhapCao"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="175dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/Nang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="47dp"
         android:text="Cân Nặng"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/nhapcanNang"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Cao" />
 
     <EditText
         android:id="@+id/nhapCao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="89dp"
         android:ems="10"
         android:imeOptions="actionDone"
         android:inputType="number"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintStart_toEndOf="@+id/Cao"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/nhapcanNang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
         android:ems="10"
         android:imeOptions="actionDone"
         android:inputType="number"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="234dp" />
+        app:layout_constraintStart_toEndOf="@+id/Nang"
+        app:layout_constraintTop_toBottomOf="@+id/nhapCao" />
 
     <Button
         android:id="@+id/Hamtinh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tính Toán"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="208dp"
 
+        android:onClick="onCaculateButtonClick"
+        android:text="Tính Toán"
+        app:layout_constraintBottom_toTopOf="@+id/tvKetQua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="374dp"
-        android:onClick="onCaculateButtonClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/nhapcanNang" />
 
     <TextView
         android:id="@+id/tvKetQua"
         android:layout_width="0dp"
         android:layout_height="15dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="535dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Hamtinh" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
