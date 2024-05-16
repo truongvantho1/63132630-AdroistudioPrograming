@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 if (definition != null) {
                     textViewDefinition.setText(definition);
                 } else {
-                    textViewDefinition.setText("Definition not found");
+                    textViewDefinition.setText("Xin lỗi nhưng tôi không có từ đó");
                 }
             }
         });
