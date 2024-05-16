@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "tho.ThiCuoiKi.DuAnThiCuoiKi"
+    namespace = "tho.thicuoiki.duanthicuoiki"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "tho.ThiCuoiKi.DuAnThiCuoiKi"
+        applicationId = "tho.thicuoiki.duanthicuoiki"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

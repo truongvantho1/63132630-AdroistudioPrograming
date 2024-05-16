@@ -1,4 +1,4 @@
-package tho.ThiCuoiKi.DuAnThiCuoiKi;
+package tho.thicuoiki.duanthicuoiki;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

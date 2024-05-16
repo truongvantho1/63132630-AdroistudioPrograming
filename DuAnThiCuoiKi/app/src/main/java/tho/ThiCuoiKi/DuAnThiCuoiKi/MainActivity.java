@@ -1,4 +1,4 @@
-package tho.ThiCuoiKi.DuAnThiCuoiKi;
+package tho.thicuoiki.duanthicuoiki;
 
 import android.os.Bundle;
 import android.view.View;
