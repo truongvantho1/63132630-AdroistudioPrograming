@@ -1,5 +1,4 @@
 package tho.thicuoiki.duanthicuoiki;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
