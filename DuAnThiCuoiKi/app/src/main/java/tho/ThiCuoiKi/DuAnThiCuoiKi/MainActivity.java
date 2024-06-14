@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         dictionaryDatabase.addWord("fly", "Bay");
         dictionaryDatabase.addWord("bee", "Con ong");
         dictionaryDatabase.addWord("cat", " Một Con Mèo");
+        dictionaryDatabase.addWord("honey", " Mật ong");
         dictionaryDatabase.addWord("one", "Số 1");
         dictionaryDatabase.addWord("two", "Số 2");
         dictionaryDatabase.addWord("three", "Số 3");
@@ -129,6 +130,28 @@ public class MainActivity extends AppCompatActivity {
         dictionaryDatabase.addWord("ninety-eight", "Số 98");
         dictionaryDatabase.addWord("ninety-nine", "Số 99");
         dictionaryDatabase.addWord("one hundred", "Số 100");
+        dictionaryDatabase.addWord("hug", "Ôm");
+        dictionaryDatabase.addWord("shake", "Lắc");
+        dictionaryDatabase.addWord("shake hand ", "Bắt Tay");
+        dictionaryDatabase.addWord("bye ", "Tạm Biệt");
+        dictionaryDatabase.addWord("hi ", "Xin Chào");
+        dictionaryDatabase.addWord("hello ", "Xin Chào");
+        dictionaryDatabase.addWord("goodnight ", "Chúc Ngủ Ngon");
+        dictionaryDatabase.addWord("goodmorning ", "Chào Buổi Sáng");
+        dictionaryDatabase.addWord("afternoon", "Buổi Chiều ");
+        dictionaryDatabase.addWord("morning", "Buổi Sáng ");
+        dictionaryDatabase.addWord("atention", "Chú ý hoặc để ý ");
+        dictionaryDatabase.addWord("buy", "Mua ");
+        dictionaryDatabase.addWord("sell", "Bán ");
+        dictionaryDatabase.addWord("incrase", "Tăng ");
+        dictionaryDatabase.addWord("decrase", "Giảm");
+        dictionaryDatabase.addWord("look", "Nhìn");
+        dictionaryDatabase.addWord("look at", "Nhìn vào");
+        dictionaryDatabase.addWord("walk ", "Đi bộ");
+        dictionaryDatabase.addWord("stell walk ", " rón rén");
+        dictionaryDatabase.addWord("run", " Chạy");
+        dictionaryDatabase.addWord("alert", " Cảnh Báo ");
+        dictionaryDatabase.addWord("caution", " Biển Báo ");
 
 
 
@@ -142,7 +165,8 @@ public class MainActivity extends AppCompatActivity {
                 if (definition != null) {
                     textViewDefinition.setText(definition);
                 } else {
-                    textViewDefinition.setText("Xin lỗi nhưng tôi không có từ đó");
+                    textViewDefinition.setText("Xin lỗi nhưng tôi không có từ đó chúng tôi sẽ "
+                            +"cập nhật thêm");
                 }
             }
         });
